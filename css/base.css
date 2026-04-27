@@ -1,0 +1,133 @@
+/* ==========================================================================
+   AMRUS NATALSYA — Website Biografi
+   Tema: Tradisional Indonesia (Earth tones, batik motifs, klasik elegan)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Palette: tanah, kayu, batik, emas */
+  --bg-primary: #f4ead5;        /* gading / krem batik */
+  --bg-secondary: #ebd9b4;      /* kuning tua sogan */
+  --bg-dark: #2b1810;           /* coklat tua, tinta wenter */
+  --bg-paper: #faf3e0;          /* kertas kuno */
+
+  --accent-red: #8b2e1f;        /* merah bata, tanah liat */
+  --accent-red-dark: #6b1e12;
+  --accent-gold: #b8860b;       /* emas tua, prada */
+  --accent-gold-light: #d4a437;
+  --accent-brown: #5c3a1e;      /* coklat sogan */
+  --accent-brown-light: #8b5e3c;
+
+  --text-primary: #2b1810;
+  --text-secondary: #5c3a1e;
+  --text-muted: #8b6f4a;
+  --text-light: #faf3e0;
+
+  --border-color: #c9a876;
+
+  --font-display: 'Playfair Display', serif;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  --shadow-sm: 0 2px 8px rgba(43, 24, 16, 0.08);
+  --shadow-md: 0 8px 24px rgba(43, 24, 16, 0.12);
+  --shadow-lg: 0 20px 60px rgba(43, 24, 16, 0.18);
+
+  --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Tekstur kertas batik subtle pada background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(184, 134, 11, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(139, 46, 31, 0.04) 0%, transparent 40%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.4'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+main, header, footer, nav {
+  position: relative;
+  z-index: 2;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+.display-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+}
+
+p {
+  font-family: var(--font-body);
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--accent-red);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--accent-gold);
+}
+
+/* ==========================================================================
+   ORNAMEN / BATIK PATTERNS (sebagai dekorasi via SVG)
+   ========================================================================== */
+.batik-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 3rem auto;
+  max-width: 600px;
+}
+
+.batik-divider .line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+}
+
+.batik-divider .ornament {
+  width: 28px;
+  height: 28px;
+  fill: var(--accent-gold);
+  opacity: 0.7;
+}
+

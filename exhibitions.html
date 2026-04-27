@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pameran — Amrus Natalsya</title>
+  <meta name="description" content="Daftar lengkap pameran tunggal dan kolektif yang pernah diikuti maestro Amrus Natalsya.">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/page-header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%238b2e1f'/%3E%3Ctext x='50' y='62' text-anchor='middle' fill='%23f4ead5' font-family='serif' font-size='40' font-weight='bold' font-style='italic'%3EA%3C/text%3E%3C/svg%3E">
+  <style>
+    .exhibition-list {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .exhibition-item {
+      display: grid;
+      grid-template-columns: 100px 1fr auto;
+      gap: 2rem;
+      align-items: center;
+      padding: 2rem;
+      background: var(--bg-paper);
+      border: 1px solid var(--border-color);
+      transition: all var(--transition);
+    }
+    .exhibition-item:hover {
+      transform: translateX(4px);
+      border-left: 4px solid var(--accent-red);
+      box-shadow: var(--shadow-md);
+    }
+    .exhibition-year {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--accent-red);
+      line-height: 1;
+      font-style: italic;
+    }
+    .exhibition-content h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      color: var(--text-primary);
+      margin-bottom: 0.4rem;
+      font-style: italic;
+    }
+    .exhibition-content .venue {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    .exhibition-content .description {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .exhibition-tag {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.85rem;
+      background: var(--bg-dark);
+      color: var(--bg-primary);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .exhibition-tag.tunggal {
+      background: var(--accent-red);
+    }
+    @media (max-width: 768px) {
+      .exhibition-item {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+      .exhibition-year { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============== NAVIGATION ============== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="2"/>
+          <circle cx="50" cy="50" r="36" fill="currentColor"/>
+          <text x="50" y="63" text-anchor="middle" fill="#f4ead5" font-family="Playfair Display, serif" font-size="36" font-weight="900" font-style="italic">A</text>
+        </svg>
+        <div class="logo-text">
+          AMRUS NATALSYA
+          <span class="subtitle">Maestro Pematung Kayu</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="gallery.html" class="nav-link">Galeri</a></li>
+        <li><a href="shop.html" class="nav-link">Toko</a></li>
+        <li><a href="exhibitions.html" class="nav-link active">Pameran</a></li>
+        <li><a href="contact.html" class="nav-link">Kontak</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============== PAGE HEADER ============== -->
+  <header class="page-header">
+    <div class="page-header-content">
+      <div class="page-eyebrow">Riwayat Pameran 1955 — 2023</div>
+      <h1 class="page-title">Catatan <span class="accent">Pameran</span></h1>
+      <p class="page-subtitle">
+        Tujuh dekade jejak sang maestro di galeri-galeri Tanah Air dan mancanegara
+      </p>
+      <div class="batik-divider">
+        <div class="line"></div>
+        <svg class="ornament" viewBox="0 0 24 24"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"/></svg>
+        <div class="line"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============== EXHIBITIONS ============== -->
+  <section class="gallery-section">
+    <div class="section-container">
+      <div class="exhibition-list">
+
+        <div class="exhibition-item">
+          <div class="exhibition-year">2023</div>
+          <div class="exhibition-content">
+            <h3>Dua Petarung</h3>
+            <div class="venue">Bentara Budaya Yogyakarta &middot; 14–19 Desember 2023</div>
+            <div class="description">
+              Pameran duet bersama Misbach Tamrin yang menjadi pameran terakhir Sanggar Bumi Tarung.
+              Menampilkan karya-karya dari periode terakhir kedua maestro.
+            </div>
+          </div>
+          <div class="exhibition-tag tunggal">Pameran Duet</div>
+        </div>
+
+        <div class="exhibition-item">
+          <div class="exhibition-year">2019</div>
+          <div class="exhibition-content">
+            <h3>Terakhir, Selamat Tinggal dan Terima Kasih</h3>
+            <div class="venue">Galeri Cipta II, Taman Ismail Marzuki, Jakarta &middot; 14–23 Juli 2019</div>
+            <div class="description">
+              Pameran tunggal yang dimaksudkan sebagai pameran terakhir sang maestro. Menampilkan
+              50 karya termasuk lukisan kanvas, lukisan pahat bertema pasar, Pecinan, dan patung
+              Kapal Nuh.
+            </div>
+          </div>
+          <div class="exhibition-tag tunggal">Pameran Tunggal</div>
+        </div>
+
+        <div class="exhibition-item">
+          <div class="exhibition-year">2008</div>
+          <div class="exhibition-content">
+            <h3>Pameran Seni Rupa Sanggar Bumi Tarung ke-2</h3>
+            <div class="venue">Galeri Nasional Indonesia, Jakarta</div>
+            <div class="description">
+              Pameran kolektif besar bersama seniman-seniman lain dari Sanggar Bumi Tarung: Djoko Pekik,
+              Misbach Tamrin, Isa Hasanda, Adrianus Gumelar, dan lainnya. Menjadi penanda kebangkitan
+              kembali sanggar setelah era reformasi.
+            </div>
+          </div>
+          <div class="exhibition-tag">Kolektif</div>
+        </div>
+
+        <div class="exhibition-item">
+          <div class="exhibition-year">2000</div>
+          <div class="exhibition-content">
+            <h3>Kepedulian Sesama Pelukis</h3>
+            <div class="venue">Galeri 678, Jakarta</div>
+            <div class="description">
+              Pameran kolektif untuk solidaritas antar seniman, juga menampilkan pameran tunggal "Kampung
+              dan Metropolitan" karya Amrus.
+            </div>
+          </div>
+          <div class="exhibition-tag">Kolektif</div>
+        </div>
+
+        <div class="exhibition-item">
+          <div class="exhibition-year">1998</div>
+          <div class="exhibition-content">
+            <h3>Trienale Jakarta II — Patung Kontemporer</h3>
+            <div class="venue">Jakarta</div>
+            <div class="description">
+              Pameran patung kontemporer di mana karya Amrus dinobatkan sebagai salah satu karya terbaik.
+              Periode ini menandai kembalinya nama Amrus ke pusat panggung seni rupa Indonesia.
+            </div>
+          </div>
+          <div class="exhibition-tag">Kolektif</div>
+        </div>
+
+        <div class="exhibition-item">
+          <div class="exhibition-year">1995</div>
+          <div class="exhibition-content">
+            <h3>Pameran Tunggal Galeri Lontar</h3>
+            <div class="venue">Galeri Lontar, Jakarta</div>
+            <div class="description">
+              Pameran tunggal pertama setelah masa-masa sulit pasca penjara. Menjadi tonggak penting
+              kembalinya Amrus ke galeri-galeri besar Tanah Air.
+            </div>
+          </div>
+          <div class="exhibition-tag tunggal">Pameran Tunggal</div>
+        </div>
+
+        <div class="exhibition-item">
+          <div class="exhibition-year">1961-63</div>
+          <div class="exhibition-content">
+            <h3>Pameran Bersama Mahasiswa ASRI</h3>
+            <div class="venue">Yogyakarta &amp; Jakarta</div>
+            <div class="description">
+              Serangkaian pameran kolektif bersama mahasiswa ASRI dan anggota Sanggar Bumi Tarung yang
+              baru terbentuk. Tahun-tahun produktif sebelum tragedi 1965.
+            </div>
+          </div>
+          <div class="exhibition-tag">Kolektif</div>
+        </div>
+
+        <div class="exhibition-item">
+          <div class="exhibition-year">1959</div>
+          <div class="exhibition-content">
+            <h3>Pekan Pemuda Internasional Wina</h3>
+            <div class="venue">Wina, Austria</div>
+            <div class="description">
+              Mewakili Indonesia sebagai duta kebudayaan bersama Batara Lubis. Setelah Wina, melawat
+              ke Moskow, Budapest, dan Republik Rakyat Tiongkok.
+            </div>
+          </div>
+          <div class="exhibition-tag">Internasional</div>
+        </div>
+
+        <div class="exhibition-item">
+          <div class="exhibition-year">1955</div>
+          <div class="exhibition-content">
+            <h3>Konferensi Asia Afrika</h3>
+            <div class="venue">Bandung, Indonesia</div>
+            <div class="description">
+              Pameran lukisan dalam rangka momentum bersejarah Konferensi Asia Afrika. Karya Amrus muda
+              ikut dipajang di tengah delegasi puluhan negara.
+            </div>
+          </div>
+          <div class="exhibition-tag">Internasional</div>
+        </div>
+
+        <div class="exhibition-item">
+          <div class="exhibition-year">1955</div>
+          <div class="exhibition-content">
+            <h3>Pameran Tunggal Taman Merdeka Utara</h3>
+            <div class="venue">Jakarta</div>
+            <div class="description">
+              Pameran tunggal pertama Amrus muda di Jakarta, hanya setahun setelah ia masuk ASRI.
+              Periode produktif yang menarik perhatian Presiden Soekarno.
+            </div>
+          </div>
+          <div class="exhibition-tag tunggal">Pameran Tunggal</div>
+        </div>
+
+        <div class="exhibition-item">
+          <div class="exhibition-year">1955</div>
+          <div class="exhibition-content">
+            <h3>Pameran Lukisan Wina</h3>
+            <div class="venue">Wina, Austria</div>
+            <div class="description">
+              Pameran luar negeri pertama Amrus. Karya patung Indonesia mulai dikenal di Eropa melalui
+              tangan sang maestro muda.
+            </div>
+          </div>
+          <div class="exhibition-tag">Internasional</div>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: var(--bg-dark); color: var(--text-light);">
+        <p style="font-family: var(--font-serif); font-style: italic; font-size: 1.2rem; max-width: 700px; margin: 0 auto; color: var(--bg-primary);">
+          "Karya-karya Amrus laik menjadi bagian penting dalam perjalanan sejarah seni rupa di Tanah Air."
+        </p>
+        <div style="margin-top: 1rem; font-family: var(--font-body); font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-gold-light);">
+          Selamat Jalan, Sang Maestro &middot; 1933 — 2024
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer>
+    <div class="footer-pattern"></div>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <svg class="logo-mark" viewBox="0 0 100 100" style="fill: var(--accent-gold-light);">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="50" cy="50" r="36" fill="currentColor"/>
+            <text x="50" y="63" text-anchor="middle" fill="#2b1810" font-family="Playfair Display, serif" font-size="36" font-weight="900" font-style="italic">A</text>
+          </svg>
+          <div class="logo-text" style="color: var(--bg-primary);">
+            AMRUS NATALSYA
+            <span class="subtitle" style="color: var(--accent-gold-light);">Maestro Pematung Kayu</span>
+          </div>
+        </a>
+        <p>Arsip resmi karya, tulisan, dan riwayat hidup sang maestro pematung kayu Indonesia.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Jelajahi</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="gallery.html">Galeri Karya</a></li>
+          <li><a href="shop.html">Toko</a></li>
+          <li><a href="exhibitions.html">Pameran</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Karya</h4>
+        <ul>
+          <li><a href="gallery.html">Patung Kayu</a></li>
+          <li><a href="gallery.html">Lukisan Kanvas</a></li>
+          <li><a href="gallery.html">Cukil Kayu</a></li>
+          <li><a href="gallery.html">Kaligrafi</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="contact.html">Hubungi Kami</a></li>
+          <li><a href="mailto:arsip@amrusnatalsya.id">arsip@amrusnatalsya.id</a></li>
+          <li><a href="#">Cibinong, Bogor</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2026 Arsip Amrus Natalsya
+      <span class="ornament">&#10070;</span>
+      Dibuat dengan hormat untuk sang maestro
+      <span class="ornament">&#10070;</span>
+      Bumi Tarung
+    </div>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/reveal.js"></script>
+</body>
+</html>

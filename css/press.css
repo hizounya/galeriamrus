@@ -1,0 +1,73 @@
+/* ==========================================================================
+   PRESS / KUTIPAN SECTION
+   ========================================================================== */
+.press-section {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.press-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><g fill='none' stroke='%23d4a437' stroke-width='0.5' opacity='0.1'><path d='M0 50 Q 25 25, 50 50 T 100 50'/><path d='M0 60 Q 25 35, 50 60 T 100 60'/><path d='M0 40 Q 25 15, 50 40 T 100 40'/></g></svg>");
+  background-size: 300px 300px;
+}
+
+.press-section .section-title,
+.press-section .section-description {
+  color: var(--text-light);
+}
+
+.press-section .section-title .accent {
+  color: var(--accent-gold-light);
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.quote-card {
+  background: rgba(244, 234, 213, 0.05);
+  border: 1px solid rgba(212, 164, 55, 0.2);
+  padding: 2.5rem 2rem;
+  position: relative;
+  backdrop-filter: blur(8px);
+}
+
+.quote-card::before {
+  content: '"';
+  position: absolute;
+  top: 0.5rem;
+  left: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 5rem;
+  color: var(--accent-gold);
+  line-height: 1;
+  opacity: 0.4;
+}
+
+.quote-text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 1.5rem 0 1.5rem;
+  color: var(--bg-primary);
+}
+
+.quote-source {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-gold-light);
+  font-weight: 500;
+}
+

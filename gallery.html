@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Karya — Amrus Natalsya</title>
+  <meta name="description" content="Galeri karya patung, lukisan, dan cukil kayu dari maestro Amrus Natalsya.">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/page-header.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%238b2e1f'/%3E%3Ctext x='50' y='62' text-anchor='middle' fill='%23f4ead5' font-family='serif' font-size='40' font-weight='bold' font-style='italic'%3EA%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ============== NAVIGATION ============== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="2"/>
+          <circle cx="50" cy="50" r="36" fill="currentColor"/>
+          <text x="50" y="63" text-anchor="middle" fill="#f4ead5" font-family="Playfair Display, serif" font-size="36" font-weight="900" font-style="italic">A</text>
+        </svg>
+        <div class="logo-text">
+          AMRUS NATALSYA
+          <span class="subtitle">Maestro Pematung Kayu</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="gallery.html" class="nav-link active">Galeri</a></li>
+        <li><a href="shop.html" class="nav-link">Toko</a></li>
+        <li><a href="exhibitions.html" class="nav-link">Pameran</a></li>
+        <li><a href="contact.html" class="nav-link">Kontak</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============== PAGE HEADER ============== -->
+  <header class="page-header">
+    <div class="page-header-content">
+      <div class="page-eyebrow">Arsip Karya 1955 — 2023</div>
+      <h1 class="page-title">Galeri <span class="accent">Karya</span></h1>
+      <p class="page-subtitle">
+        Patung, lukisan, dan cukil kayu yang lahir dari tangan sang maestro selama hampir tujuh dekade
+      </p>
+      <div class="batik-divider">
+        <div class="line"></div>
+        <svg class="ornament" viewBox="0 0 24 24"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"/></svg>
+        <div class="line"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============== GALLERY ============== -->
+  <section class="gallery-section">
+    <div class="section-container">
+
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">Semua Karya</button>
+        <button class="filter-btn" data-filter="patung">Patung Kayu</button>
+        <button class="filter-btn" data-filter="lukisan">Lukisan</button>
+        <button class="filter-btn" data-filter="cukil">Cukil Kayu</button>
+        <button class="filter-btn" data-filter="kaligrafi">Kaligrafi</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+
+        <!-- Karya 1: Orang Buta yang Terlupakan -->
+        <div class="gallery-item" data-category="patung"
+             data-title="Orang Buta yang Terlupakan"
+             data-year="1955"
+             data-medium="Kayu Asam"
+             data-dimensions="65 × 35 × 30 cm"
+             data-collection="Koleksi Presiden Soekarno"
+             data-description="Patung pertama Amrus yang lahir saat ia masih mahasiswa tahun pertama ASRI. Menampilkan sosok lelaki duduk dengan leher panjang dan mata buta — sebuah metafora tentang nasib rakyat kecil yang tak terlihat. Karya ini langsung dibeli oleh Presiden Soekarno setelah dipamerkan di Museum Sonobudoyo, Yogyakarta.">
+          <div class="gallery-image">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#8b5e3c"/>
+                  <stop offset="1" stop-color="#3d2817"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#g1)"/>
+              <!-- Patung sosok duduk -->
+              <g transform="translate(200,260)">
+                <ellipse cx="0" cy="180" rx="90" ry="20" fill="#2b1810" opacity="0.5"/>
+                <!-- Tubuh duduk -->
+                <path d="M -60 160 L -50 50 Q -30 30, 0 30 Q 30 30, 50 50 L 60 160 Z" fill="#a87c52"/>
+                <!-- Leher panjang -->
+                <path d="M -15 40 L -12 -40 L 12 -40 L 15 40 Z" fill="#d4a437" opacity="0.85"/>
+                <!-- Kepala -->
+                <ellipse cx="0" cy="-70" rx="32" ry="38" fill="#a87c52"/>
+                <!-- Mata buta (garis) -->
+                <line x1="-18" y1="-75" x2="-6" y2="-75" stroke="#2b1810" stroke-width="2.5"/>
+                <line x1="6" y1="-75" x2="18" y2="-75" stroke="#2b1810" stroke-width="2.5"/>
+                <!-- Tangan -->
+                <ellipse cx="-50" cy="100" rx="15" ry="40" fill="#8b6f4a" transform="rotate(-15 -50 100)"/>
+                <ellipse cx="50" cy="100" rx="15" ry="40" fill="#8b6f4a" transform="rotate(15 50 100)"/>
+              </g>
+            </svg>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-text">Klik untuk detail karya</div>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-category">Patung Kayu &middot; 1955</span>
+            <div class="gallery-title">Orang Buta yang Terlupakan</div>
+            <div class="gallery-year">Koleksi Presiden Soekarno</div>
+          </div>
+        </div>
+
+        <!-- Karya 2: Pecinan -->
+        <div class="gallery-item" data-category="cukil"
+             data-title="Pecinan"
+             data-year="1998"
+             data-medium="Cukil Kayu (woodcut)"
+             data-dimensions="120 × 240 cm (panel)"
+             data-collection="Koleksi Etty Mustafa"
+             data-description="Mahakarya cukil kayu Amrus yang menggemparkan dunia seni rupa Indonesia. Lahir sebagai respon terhadap tragedi Mei 1998, karya ini menggambarkan kehidupan masyarakat Pecinan dengan komposisi tubuh-tubuh yang berdesakan, simbol-simbol pasar, dan ritme yang sesak — empati sang maestro pada situasi masyarakat saat itu.">
+          <div class="gallery-image">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#6b1e12"/>
+                  <stop offset="1" stop-color="#2b1810"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#g2)"/>
+              <!-- Lampion-lampion -->
+              <g fill="#d4a437">
+                <circle cx="60" cy="80" r="20" opacity="0.8"/>
+                <circle cx="160" cy="60" r="18" opacity="0.7"/>
+                <circle cx="280" cy="90" r="22" opacity="0.85"/>
+                <circle cx="340" cy="70" r="16" opacity="0.7"/>
+                <line x1="60" y1="60" x2="60" y2="0" stroke="#d4a437" stroke-width="1"/>
+                <line x1="160" y1="42" x2="160" y2="0" stroke="#d4a437" stroke-width="1"/>
+                <line x1="280" y1="68" x2="280" y2="0" stroke="#d4a437" stroke-width="1"/>
+                <line x1="340" y1="54" x2="340" y2="0" stroke="#d4a437" stroke-width="1"/>
+              </g>
+              <!-- Sosok-sosok berkerumun -->
+              <g fill="#8b5e3c">
+                <circle cx="80" cy="280" r="25"/>
+                <rect x="55" y="295" width="50" height="120" rx="10"/>
+                <circle cx="160" cy="270" r="28"/>
+                <rect x="130" y="290" width="60" height="130" rx="10"/>
+                <circle cx="240" cy="275" r="26"/>
+                <rect x="212" y="293" width="55" height="125" rx="10"/>
+                <circle cx="320" cy="285" r="24"/>
+                <rect x="295" y="302" width="50" height="118" rx="10"/>
+              </g>
+              <!-- Aksen kuning di wajah -->
+              <g fill="#d4a437" opacity="0.5">
+                <circle cx="80" cy="280" r="8"/>
+                <circle cx="160" cy="270" r="9"/>
+                <circle cx="240" cy="275" r="8"/>
+                <circle cx="320" cy="285" r="7"/>
+              </g>
+              <!-- Tekstur cukil -->
+              <g stroke="#d4a437" stroke-width="0.5" fill="none" opacity="0.3">
+                <path d="M 0 200 L 400 200"/>
+                <path d="M 0 220 L 400 215"/>
+                <path d="M 0 240 L 400 245"/>
+                <path d="M 0 450 L 400 450"/>
+                <path d="M 0 470 L 400 465"/>
+                <path d="M 0 490 L 400 495"/>
+              </g>
+            </svg>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-text">Klik untuk detail karya</div>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-category">Cukil Kayu &middot; 1998</span>
+            <div class="gallery-title">Pecinan</div>
+            <div class="gallery-year">Karya Fenomenal</div>
+          </div>
+        </div>
+
+        <!-- Karya 3: Kawan-Kawanku -->
+        <div class="gallery-item" data-category="lukisan"
+             data-title="Kawan-Kawanku"
+             data-year="1958"
+             data-medium="Cat Minyak di Kanvas"
+             data-dimensions="180 × 240 cm"
+             data-collection="Istana Negara RI"
+             data-description="Lukisan yang menjadi koleksi Presiden Soekarno dan sempat menghiasi dinding Istana Negara. Menggambarkan teman-teman kuliahnya di ASRI yang sedang beristirahat di sore hari, hendak mandi setelah seharian bekerja. Karya ini sempat tersimpan rusak di gudang istana selama hampir tiga dekade sebelum ditemukan kembali pada 2011.">
+          <div class="gallery-image">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#d4a437"/>
+                  <stop offset="0.5" stop-color="#b8860b"/>
+                  <stop offset="1" stop-color="#5c3a1e"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#g3)"/>
+              <!-- Sosok mandi/istirahat -->
+              <g>
+                <!-- Tanah -->
+                <rect y="380" width="400" height="120" fill="#5c3a1e"/>
+                <!-- Pohon kelapa kiri -->
+                <rect x="40" y="80" width="8" height="300" fill="#3d2817"/>
+                <path d="M 44 80 Q 20 70, 5 90 M 44 80 Q 70 70, 85 95 M 44 80 Q 30 50, 25 30 M 44 80 Q 60 55, 70 35" stroke="#3d2817" stroke-width="3" fill="none"/>
+                <!-- Sosok 1 -->
+                <ellipse cx="130" cy="280" rx="22" ry="30" fill="#8b5e3c"/>
+                <rect x="115" y="305" width="30" height="80" fill="#6b1e12"/>
+                <ellipse cx="130" cy="385" rx="20" ry="6" fill="#3d2817"/>
+                <!-- Sosok 2 -->
+                <ellipse cx="200" cy="270" rx="24" ry="32" fill="#8b5e3c"/>
+                <rect x="183" y="298" width="34" height="85" fill="#2b1810"/>
+                <ellipse cx="200" cy="383" rx="22" ry="6" fill="#3d2817"/>
+                <!-- Sosok 3 -->
+                <ellipse cx="270" cy="285" rx="22" ry="30" fill="#8b5e3c"/>
+                <rect x="255" y="310" width="30" height="75" fill="#6b1e12"/>
+                <ellipse cx="270" cy="385" rx="20" ry="6" fill="#3d2817"/>
+                <!-- Ember -->
+                <path d="M 100 350 L 105 380 L 130 380 L 135 350 Z" fill="#2b1810"/>
+                <path d="M 240 360 L 245 385 L 270 385 L 275 360 Z" fill="#2b1810"/>
+              </g>
+            </svg>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-text">Klik untuk detail karya</div>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-category">Lukisan &middot; 1958</span>
+            <div class="gallery-title">Kawan-Kawanku</div>
+            <div class="gallery-year">Koleksi Istana Negara</div>
+          </div>
+        </div>
+
+        <!-- Karya 4: Jeritan Tak Terdengar -->
+        <div class="gallery-item" data-category="patung"
+             data-title="Jeritan Tak Terdengar"
+             data-year="1955"
+             data-medium="Kayu Jati"
+             data-dimensions="80 × 40 × 35 cm"
+             data-collection="Departemen P&K Pusat"
+             data-description="Patung kayu jati yang dibeli oleh Departemen Pendidikan dan Kebudayaan Pusat. Menampilkan sosok yang membuka mulut lebar dalam jeritan, namun tanpa suara — sebuah komentar pedas tentang ketidakberdayaan rakyat untuk bersuara. Karya ini turut mengangkat nama Amrus muda di kancah seni rupa nasional.">
+          <div class="gallery-image">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g4" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#8b2e1f"/>
+                  <stop offset="1" stop-color="#3d2817"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#g4)"/>
+              <g transform="translate(200,250)">
+                <ellipse cx="0" cy="200" rx="100" ry="20" fill="#2b1810" opacity="0.5"/>
+                <!-- Tubuh -->
+                <path d="M -55 180 Q -65 80, -35 30 L 35 30 Q 65 80, 55 180 Z" fill="#a87c52"/>
+                <!-- Lengan terangkat -->
+                <ellipse cx="-65" cy="40" rx="14" ry="55" fill="#8b6f4a" transform="rotate(-30 -65 40)"/>
+                <ellipse cx="65" cy="40" rx="14" ry="55" fill="#8b6f4a" transform="rotate(30 65 40)"/>
+                <!-- Kepala mendongak -->
+                <ellipse cx="0" cy="-30" rx="40" ry="45" fill="#a87c52"/>
+                <!-- Mulut terbuka -->
+                <ellipse cx="0" cy="-15" rx="14" ry="22" fill="#2b1810"/>
+                <ellipse cx="0" cy="-12" rx="10" ry="16" fill="#5c3a1e"/>
+                <!-- Mata tertutup -->
+                <path d="M -20 -45 Q -15 -50, -10 -45" stroke="#2b1810" stroke-width="2" fill="none"/>
+                <path d="M 10 -45 Q 15 -50, 20 -45" stroke="#2b1810" stroke-width="2" fill="none"/>
+              </g>
+            </svg>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-text">Klik untuk detail karya</div>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-category">Patung Kayu &middot; 1955</span>
+            <div class="gallery-title">Jeritan Tak Terdengar</div>
+            <div class="gallery-year">Koleksi Departemen P&amp;K</div>
+          </div>
+        </div>
+
+        <!-- Karya 5: Pasar Pagi -->
+        <div class="gallery-item" data-category="lukisan"
+             data-title="Pasar Pagi"
+             data-year="2008"
+             data-medium="Cat Minyak di Kanvas"
+             data-dimensions="150 × 200 cm"
+             data-collection="Koleksi Pribadi"
+             data-description="Tema pasar adalah salah satu obsesi Amrus yang kembali muncul di periode pasca-reformasi. Lukisan ini menangkap dinamika pedagang sayur, ikan, dan bumbu di pagi buta — riuh rendah, jujur, dan penuh kehidupan. Karya ini dipamerkan dalam Pameran Seni Rupa ke-2 Sanggar Bumi Tarung di Galeri Nasional Indonesia.">
+          <div class="gallery-image">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g5" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#ebd9b4"/>
+                  <stop offset="0.4" stop-color="#d4a437"/>
+                  <stop offset="1" stop-color="#6b1e12"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#g5)"/>
+              <!-- Tenda pasar -->
+              <g>
+                <path d="M 40 200 L 100 150 L 160 200 Z" fill="#8b2e1f" opacity="0.85"/>
+                <path d="M 140 210 L 200 160 L 260 210 Z" fill="#5c3a1e" opacity="0.85"/>
+                <path d="M 240 200 L 300 150 L 360 200 Z" fill="#8b2e1f" opacity="0.85"/>
+                <!-- Tiang -->
+                <line x1="40" y1="200" x2="45" y2="350" stroke="#3d2817" stroke-width="3"/>
+                <line x1="160" y1="200" x2="155" y2="350" stroke="#3d2817" stroke-width="3"/>
+                <line x1="200" y1="160" x2="200" y2="350" stroke="#3d2817" stroke-width="3"/>
+                <line x1="260" y1="210" x2="265" y2="350" stroke="#3d2817" stroke-width="3"/>
+                <line x1="360" y1="200" x2="355" y2="350" stroke="#3d2817" stroke-width="3"/>
+              </g>
+              <!-- Sosok pedagang -->
+              <g>
+                <circle cx="80" cy="290" r="18" fill="#a87c52"/>
+                <rect x="62" y="305" width="36" height="55" fill="#2b1810"/>
+                <circle cx="180" cy="295" r="20" fill="#a87c52"/>
+                <rect x="160" y="312" width="40" height="58" fill="#5c3a1e"/>
+                <circle cx="280" cy="285" r="18" fill="#a87c52"/>
+                <rect x="262" y="300" width="36" height="60" fill="#6b1e12"/>
+              </g>
+              <!-- Lantai/dagangan -->
+              <rect y="370" width="400" height="130" fill="#3d2817"/>
+              <g fill="#d4a437" opacity="0.6">
+                <circle cx="100" cy="395" r="8"/>
+                <circle cx="120" cy="400" r="6"/>
+                <circle cx="200" cy="395" r="8"/>
+                <circle cx="220" cy="400" r="7"/>
+                <circle cx="300" cy="395" r="8"/>
+                <circle cx="320" cy="400" r="6"/>
+              </g>
+            </svg>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-text">Klik untuk detail karya</div>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-category">Lukisan &middot; 2008</span>
+            <div class="gallery-title">Pasar Pagi</div>
+            <div class="gallery-year">Koleksi Pribadi</div>
+          </div>
+        </div>
+
+        <!-- Karya 6: Kapal Nuh -->
+        <div class="gallery-item" data-category="cukil"
+             data-title="Kapal Nuh"
+             data-year="2010"
+             data-medium="Cukil Kayu (woodcut)"
+             data-dimensions="100 × 180 cm"
+             data-collection="Etty Mustafa Art Collection"
+             data-description="Tema kapal Nuh adalah refleksi Amrus tentang harapan dan keselamatan di tengah krisis. Karya ini menampilkan kapal raksasa yang dipenuhi manusia, hewan, dan dedaunan — sebuah metafora tentang masyarakat yang harus saling menyelamatkan. Dipamerkan dalam pameran tunggal 'Terakhir, Selamat Tinggal dan Terima Kasih' di Taman Ismail Marzuki, 2019.">
+          <div class="gallery-image">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g6" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#5c3a1e"/>
+                  <stop offset="0.5" stop-color="#8b5e3c"/>
+                  <stop offset="1" stop-color="#2b1810"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#g6)"/>
+              <!-- Ombak -->
+              <g stroke="#d4a437" stroke-width="1.5" fill="none" opacity="0.5">
+                <path d="M 0 380 Q 50 360, 100 380 T 200 380 T 300 380 T 400 380"/>
+                <path d="M 0 410 Q 50 390, 100 410 T 200 410 T 300 410 T 400 410"/>
+                <path d="M 0 440 Q 50 420, 100 440 T 200 440 T 300 440 T 400 440"/>
+                <path d="M 0 470 Q 50 450, 100 470 T 200 470 T 300 470 T 400 470"/>
+              </g>
+              <!-- Kapal -->
+              <g>
+                <path d="M 50 350 L 80 280 L 320 280 L 350 350 Z" fill="#3d2817"/>
+                <rect x="100" y="180" width="200" height="100" fill="#5c3a1e"/>
+                <path d="M 100 180 L 200 100 L 300 180 Z" fill="#6b1e12"/>
+                <!-- Jendela kapal -->
+                <circle cx="140" cy="230" r="10" fill="#d4a437" opacity="0.7"/>
+                <circle cx="200" cy="230" r="10" fill="#d4a437" opacity="0.7"/>
+                <circle cx="260" cy="230" r="10" fill="#d4a437" opacity="0.7"/>
+                <!-- Tiang dan layar -->
+                <line x1="200" y1="100" x2="200" y2="20" stroke="#2b1810" stroke-width="3"/>
+                <path d="M 200 30 L 250 60 L 200 90 Z" fill="#a87c52" opacity="0.9"/>
+                <!-- Sosok di atas kapal -->
+                <circle cx="150" cy="160" r="8" fill="#a87c52"/>
+                <circle cx="200" cy="155" r="8" fill="#a87c52"/>
+                <circle cx="250" cy="160" r="8" fill="#a87c52"/>
+              </g>
+              <!-- Bulan -->
+              <circle cx="60" cy="80" r="25" fill="#d4a437" opacity="0.8"/>
+            </svg>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-text">Klik untuk detail karya</div>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-category">Cukil Kayu &middot; 2010</span>
+            <div class="gallery-title">Kapal Nuh</div>
+            <div class="gallery-year">Etty Mustafa Collection</div>
+          </div>
+        </div>
+
+        <!-- Karya 7: Kaligrafi -->
+        <div class="gallery-item" data-category="kaligrafi"
+             data-title="Panel Kaligrafi Jeddah"
+             data-year="1995"
+             data-medium="Pahat Kayu Jati"
+             data-dimensions="240 × 360 cm"
+             data-collection="Pemerintah Arab Saudi"
+             data-description="Panel kayu kaligrafi raksasa yang dipesan oleh Pemerintah Arab Saudi melalui Wali Kota Jeddah. Amrus mengerjakan karya ini di bengkel hutan Kintap, Kalimantan Selatan, bersama sahabatnya Misbach Tamrin. Karya ini menjadi salah satu pengakuan internasional atas kemampuan pahat kayu sang maestro.">
+          <div class="gallery-image">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g7" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#3d2817"/>
+                  <stop offset="0.5" stop-color="#8b5e3c"/>
+                  <stop offset="1" stop-color="#3d2817"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#g7)"/>
+              <!-- Frame ornamen -->
+              <rect x="30" y="50" width="340" height="400" fill="none" stroke="#d4a437" stroke-width="3"/>
+              <rect x="50" y="70" width="300" height="360" fill="none" stroke="#d4a437" stroke-width="1"/>
+              <!-- Stylized kaligrafi -->
+              <g stroke="#d4a437" stroke-width="4" fill="none" stroke-linecap="round">
+                <path d="M 80 180 Q 140 130, 200 180 Q 260 230, 320 180"/>
+                <path d="M 80 220 Q 130 250, 180 220"/>
+                <path d="M 220 240 Q 270 210, 320 240"/>
+                <path d="M 100 290 Q 200 320, 300 290"/>
+                <circle cx="150" cy="330" r="8" fill="#d4a437"/>
+                <circle cx="250" cy="330" r="8" fill="#d4a437"/>
+                <path d="M 100 380 L 300 380"/>
+              </g>
+              <!-- Ornamen sudut -->
+              <g fill="#d4a437" opacity="0.7">
+                <path d="M 50 90 L 80 90 L 50 60 Z"/>
+                <path d="M 350 90 L 320 90 L 350 60 Z"/>
+                <path d="M 50 410 L 80 410 L 50 440 Z"/>
+                <path d="M 350 410 L 320 410 L 350 440 Z"/>
+              </g>
+            </svg>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-text">Klik untuk detail karya</div>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-category">Kaligrafi &middot; 1995</span>
+            <div class="gallery-title">Panel Kaligrafi Jeddah</div>
+            <div class="gallery-year">Pesanan Wali Kota Jeddah</div>
+          </div>
+        </div>
+
+        <!-- Karya 8: Pahlawan Laut -->
+        <div class="gallery-item" data-category="patung"
+             data-title="Pahlawan Laut Indonesia"
+             data-year="1962"
+             data-medium="Kayu &amp; Logam"
+             data-dimensions="180 × 90 × 70 cm"
+             data-collection="TNI Angkatan Laut"
+             data-description="Patung yang dipesan langsung oleh Kepala Staf Angkatan Laut, Subyakto, setelah Amrus diundang berkeliling Indonesia di atas kapal perang korvet Gadjah Mada. Sosok pahlawan laut digambarkan dalam posisi tegap, memandang horison — menyimbolkan keberanian dan dedikasi prajurit laut Republik.">
+          <div class="gallery-image">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g8" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#2b4a6b"/>
+                  <stop offset="0.5" stop-color="#5c3a1e"/>
+                  <stop offset="1" stop-color="#2b1810"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#g8)"/>
+              <!-- Patung pahlawan -->
+              <g transform="translate(200,250)">
+                <ellipse cx="0" cy="220" rx="80" ry="15" fill="#2b1810"/>
+                <!-- Postur tegap -->
+                <rect x="-30" y="50" width="60" height="160" fill="#a87c52"/>
+                <!-- Lengan -->
+                <ellipse cx="-45" cy="100" rx="14" ry="55" fill="#8b6f4a"/>
+                <ellipse cx="45" cy="100" rx="14" ry="55" fill="#8b6f4a"/>
+                <!-- Kepala -->
+                <ellipse cx="0" cy="20" rx="32" ry="38" fill="#a87c52"/>
+                <!-- Topi -->
+                <path d="M -38 -5 L -42 -25 L 42 -25 L 38 -5 Z" fill="#3d2817"/>
+                <ellipse cx="0" cy="-25" rx="42" ry="6" fill="#5c3a1e"/>
+                <!-- Mata -->
+                <ellipse cx="-10" cy="20" rx="2.5" ry="3" fill="#2b1810"/>
+                <ellipse cx="10" cy="20" rx="2.5" ry="3" fill="#2b1810"/>
+                <!-- Mulut tegap -->
+                <line x1="-8" y1="40" x2="8" y2="40" stroke="#2b1810" stroke-width="2"/>
+                <!-- Bintang di dada -->
+                <path d="M 0 90 L 5 100 L 16 100 L 7 107 L 11 118 L 0 111 L -11 118 L -7 107 L -16 100 L -5 100 Z" fill="#d4a437"/>
+              </g>
+            </svg>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-text">Klik untuk detail karya</div>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-category">Patung Kayu &middot; 1962</span>
+            <div class="gallery-title">Pahlawan Laut Indonesia</div>
+            <div class="gallery-year">Pesanan KSAL</div>
+          </div>
+        </div>
+
+        <!-- Karya 9: Kampung Halaman -->
+        <div class="gallery-item" data-category="lukisan"
+             data-title="Kampung Halaman"
+             data-year="2015"
+             data-medium="Cat Akrilik di Kanvas"
+             data-dimensions="120 × 160 cm"
+             data-collection="Koleksi Keluarga"
+             data-description="Karya intim sang maestro yang menggambarkan kampung Natal di Sumatra Utara — tanah leluhur yang ia bawa dalam namanya. Rumah panggung, pohon kelapa, dan suasana sore yang tenang menjadi cerminan kerinduan Amrus pada akar yang membentuknya sejak kecil.">
+          <div class="gallery-image">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g9" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#d4a437"/>
+                  <stop offset="0.5" stop-color="#8b5e3c"/>
+                  <stop offset="1" stop-color="#3d2817"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#g9)"/>
+              <!-- Matahari -->
+              <circle cx="320" cy="100" r="40" fill="#f4ead5" opacity="0.8"/>
+              <!-- Pohon kelapa -->
+              <g>
+                <rect x="60" y="200" width="6" height="200" fill="#3d2817"/>
+                <path d="M 63 200 Q 30 180, 10 195 M 63 200 Q 95 175, 110 200 M 63 200 Q 50 165, 45 145" stroke="#2b1810" stroke-width="3" fill="none"/>
+                <ellipse cx="63" cy="200" rx="10" ry="6" fill="#8b2e1f"/>
+              </g>
+              <g>
+                <rect x="330" y="220" width="5" height="180" fill="#3d2817"/>
+                <path d="M 333 220 Q 305 200, 290 210 M 333 220 Q 365 195, 380 215 M 333 220 Q 320 185, 318 165" stroke="#2b1810" stroke-width="3" fill="none"/>
+              </g>
+              <!-- Rumah panggung -->
+              <g>
+                <rect x="130" y="280" width="140" height="80" fill="#8b5e3c"/>
+                <path d="M 120 280 L 200 220 L 280 280 Z" fill="#6b1e12"/>
+                <!-- Tiang -->
+                <rect x="140" y="360" width="6" height="40" fill="#3d2817"/>
+                <rect x="200" y="360" width="6" height="40" fill="#3d2817"/>
+                <rect x="260" y="360" width="6" height="40" fill="#3d2817"/>
+                <!-- Pintu -->
+                <rect x="190" y="305" width="20" height="55" fill="#3d2817"/>
+                <!-- Jendela -->
+                <rect x="150" y="305" width="22" height="22" fill="#d4a437" opacity="0.7"/>
+                <rect x="228" y="305" width="22" height="22" fill="#d4a437" opacity="0.7"/>
+              </g>
+              <!-- Tanah -->
+              <rect y="400" width="400" height="100" fill="#5c3a1e"/>
+            </svg>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-text">Klik untuk detail karya</div>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-category">Lukisan &middot; 2015</span>
+            <div class="gallery-title">Kampung Halaman</div>
+            <div class="gallery-year">Koleksi Keluarga</div>
+          </div>
+        </div>
+
+        <!-- Karya 10: Buruh Tani -->
+        <div class="gallery-item" data-category="cukil"
+             data-title="Buruh Tani"
+             data-year="2005"
+             data-medium="Cukil Kayu di Papan"
+             data-dimensions="90 × 120 cm"
+             data-collection="Koleksi Galeri 678"
+             data-description="Salah satu karya cukil kayu Amrus yang merekam kehidupan petani Indonesia. Tubuh-tubuh yang membungkuk di sawah, topi caping, dan sapi yang menarik bajak — semua diukir dengan tekstur kasar khas cukil kayu yang menambah dimensi taktil pada narasi sosial.">
+          <div class="gallery-image">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g10" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#a87c52"/>
+                  <stop offset="0.5" stop-color="#6b4423"/>
+                  <stop offset="1" stop-color="#2b1810"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#g10)"/>
+              <!-- Garis horizon -->
+              <line x1="0" y1="280" x2="400" y2="280" stroke="#d4a437" stroke-width="1" opacity="0.5"/>
+              <!-- Matahari -->
+              <circle cx="100" cy="200" r="30" fill="#d4a437" opacity="0.6"/>
+              <!-- Sosok petani membungkuk -->
+              <g transform="translate(150,330)">
+                <!-- Topi caping -->
+                <path d="M -20 -50 L 20 -50 L 0 -75 Z" fill="#3d2817"/>
+                <!-- Tubuh membungkuk -->
+                <ellipse cx="0" cy="-20" rx="20" ry="15" fill="#5c3a1e"/>
+                <rect x="-25" y="-20" width="50" height="60" fill="#6b1e12" transform="rotate(-15 0 0)"/>
+                <!-- Kaki -->
+                <rect x="-12" y="35" width="10" height="40" fill="#3d2817"/>
+                <rect x="2" y="35" width="10" height="40" fill="#3d2817"/>
+              </g>
+              <g transform="translate(280,335)">
+                <path d="M -18 -45 L 18 -45 L 0 -68 Z" fill="#3d2817"/>
+                <ellipse cx="0" cy="-18" rx="18" ry="13" fill="#5c3a1e"/>
+                <rect x="-22" y="-18" width="44" height="55" fill="#2b1810" transform="rotate(-10 0 0)"/>
+                <rect x="-10" y="32" width="9" height="38" fill="#3d2817"/>
+                <rect x="2" y="32" width="9" height="38" fill="#3d2817"/>
+              </g>
+              <!-- Garis sawah/cukil texture -->
+              <g stroke="#d4a437" stroke-width="0.6" fill="none" opacity="0.4">
+                <path d="M 0 420 L 400 420"/>
+                <path d="M 0 440 L 400 440"/>
+                <path d="M 0 460 L 400 460"/>
+                <path d="M 0 480 L 400 480"/>
+              </g>
+            </svg>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-text">Klik untuk detail karya</div>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-category">Cukil Kayu &middot; 2005</span>
+            <div class="gallery-title">Buruh Tani</div>
+            <div class="gallery-year">Koleksi Galeri 678</div>
+          </div>
+        </div>
+
+        <!-- Karya 11: Ibu dan Anak -->
+        <div class="gallery-item" data-category="patung"
+             data-title="Ibu dan Anak"
+             data-year="1980"
+             data-medium="Kayu Mahoni"
+             data-dimensions="55 × 30 × 25 cm"
+             data-collection="Koleksi Pribadi"
+             data-description="Sebuah karya intim setelah masa-masa sulit pasca penjara. Patung kayu mahoni yang menggambarkan ibu memeluk anaknya — sebuah refleksi tentang kasih, keluarga, dan harapan. Dibuat di periode ketika Amrus mulai menemukan kembali ritmenya sebagai pematung di Pasar Seni Ancol.">
+          <div class="gallery-image">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g11" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#ebd9b4"/>
+                  <stop offset="1" stop-color="#5c3a1e"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#g11)"/>
+              <g transform="translate(200,260)">
+                <ellipse cx="0" cy="200" rx="90" ry="15" fill="#2b1810" opacity="0.5"/>
+                <!-- Ibu -->
+                <path d="M -65 180 Q -75 60, -40 30 L 40 30 Q 75 60, 65 180 Z" fill="#a87c52"/>
+                <ellipse cx="0" cy="-30" rx="38" ry="44" fill="#a87c52"/>
+                <!-- Rambut -->
+                <path d="M -38 -50 Q -30 -75, 0 -75 Q 30 -75, 38 -50 L 38 -25 Q 0 -32, -38 -25 Z" fill="#3d2817"/>
+                <!-- Anak dalam pelukan -->
+                <ellipse cx="-18" cy="80" rx="22" ry="28" fill="#8b6f4a"/>
+                <ellipse cx="-18" cy="50" rx="16" ry="20" fill="#a87c52"/>
+                <path d="M -28 35 Q -18 28, -8 35 L -8 50 L -28 50 Z" fill="#3d2817"/>
+                <!-- Lengan ibu memeluk -->
+                <path d="M -40 80 Q -55 100, -45 140 L -25 130 Q -30 100, -25 80 Z" fill="#a87c52"/>
+                <!-- Mata -->
+                <ellipse cx="-12" cy="-30" rx="2.5" ry="3" fill="#2b1810"/>
+                <ellipse cx="12" cy="-30" rx="2.5" ry="3" fill="#2b1810"/>
+                <path d="M -8 -10 Q 0 -5, 8 -10" stroke="#2b1810" stroke-width="1.5" fill="none"/>
+              </g>
+            </svg>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-text">Klik untuk detail karya</div>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-category">Patung Kayu &middot; 1980</span>
+            <div class="gallery-title">Ibu dan Anak</div>
+            <div class="gallery-year">Koleksi Pribadi</div>
+          </div>
+        </div>
+
+        <!-- Karya 12: Doa untuk Tanah Air -->
+        <div class="gallery-item" data-category="kaligrafi"
+             data-title="Doa untuk Tanah Air"
+             data-year="2000"
+             data-medium="Pahat Kayu Sonokeling"
+             data-dimensions="120 × 180 cm"
+             data-collection="Galeri Lontar"
+             data-description="Panel kayu dengan kombinasi kaligrafi dan ornamen tradisional Nusantara. Amrus menggabungkan motif sulur, bunga teratai, dan tulisan dalam aksara Arab dan Latin — sebuah doa visual untuk tanah air yang ia cintai sepanjang hidupnya, melewati tiga zaman.">
+          <div class="gallery-image">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g12" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#5c3a1e"/>
+                  <stop offset="0.5" stop-color="#3d2817"/>
+                  <stop offset="1" stop-color="#5c3a1e"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#g12)"/>
+              <!-- Border ornamen -->
+              <rect x="40" y="60" width="320" height="380" fill="none" stroke="#d4a437" stroke-width="2"/>
+              <rect x="55" y="75" width="290" height="350" fill="none" stroke="#d4a437" stroke-width="0.5"/>
+              <!-- Sulur -->
+              <g stroke="#d4a437" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.8">
+                <path d="M 80 130 Q 120 110, 160 130 Q 200 150, 240 130 Q 280 110, 320 130"/>
+                <path d="M 80 380 Q 120 360, 160 380 Q 200 400, 240 380 Q 280 360, 320 380"/>
+                <!-- Bunga teratai -->
+                <circle cx="200" cy="220" r="15" fill="#d4a437" opacity="0.6"/>
+                <path d="M 200 200 L 195 215 L 185 210 L 195 220 L 185 230 L 200 225 L 215 230 L 205 220 L 215 210 L 205 215 Z" fill="#d4a437"/>
+                <!-- Stylized text -->
+                <path d="M 100 280 Q 130 270, 160 280" stroke-width="3"/>
+                <path d="M 180 280 Q 210 290, 240 280" stroke-width="3"/>
+                <path d="M 260 280 Q 290 270, 320 280" stroke-width="3"/>
+                <path d="M 120 320 L 280 320" stroke-width="2"/>
+                <circle cx="150" cy="350" r="4" fill="#d4a437"/>
+                <circle cx="200" cy="350" r="4" fill="#d4a437"/>
+                <circle cx="250" cy="350" r="4" fill="#d4a437"/>
+              </g>
+            </svg>
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-text">Klik untuk detail karya</div>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <span class="gallery-category">Kaligrafi &middot; 2000</span>
+            <div class="gallery-title">Doa untuk Tanah Air</div>
+            <div class="gallery-year">Galeri Lontar</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== MODAL ============== -->
+  <div class="modal" id="galleryModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-image" id="modalImage"></div>
+      <div class="modal-info">
+        <div class="modal-eyebrow" id="modalCategory"></div>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-year" id="modalYear"></div>
+        <p class="modal-description" id="modalDescription"></p>
+        <div class="modal-meta">
+          <div class="modal-meta-item">
+            <span class="label">Medium</span>
+            <span class="value" id="modalMedium"></span>
+          </div>
+          <div class="modal-meta-item">
+            <span class="label">Dimensi</span>
+            <span class="value" id="modalDimensions"></span>
+          </div>
+          <div class="modal-meta-item">
+            <span class="label">Koleksi</span>
+            <span class="value" id="modalCollection"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== FOOTER ============== -->
+  <footer>
+    <div class="footer-pattern"></div>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <svg class="logo-mark" viewBox="0 0 100 100" style="fill: var(--accent-gold-light);">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="50" cy="50" r="36" fill="currentColor"/>
+            <text x="50" y="63" text-anchor="middle" fill="#2b1810" font-family="Playfair Display, serif" font-size="36" font-weight="900" font-style="italic">A</text>
+          </svg>
+          <div class="logo-text" style="color: var(--bg-primary);">
+            AMRUS NATALSYA
+            <span class="subtitle" style="color: var(--accent-gold-light);">Maestro Pematung Kayu</span>
+          </div>
+        </a>
+        <p>
+          Arsip resmi karya, tulisan, dan riwayat hidup sang maestro pematung kayu Indonesia.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Jelajahi</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="gallery.html">Galeri Karya</a></li>
+          <li><a href="shop.html">Toko</a></li>
+          <li><a href="exhibitions.html">Pameran</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Karya</h4>
+        <ul>
+          <li><a href="gallery.html">Patung Kayu</a></li>
+          <li><a href="gallery.html">Lukisan Kanvas</a></li>
+          <li><a href="gallery.html">Cukil Kayu</a></li>
+          <li><a href="gallery.html">Kaligrafi</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="contact.html">Hubungi Kami</a></li>
+          <li><a href="mailto:arsip@amrusnatalsya.id">arsip@amrusnatalsya.id</a></li>
+          <li><a href="#">Cibinong, Bogor</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2026 Arsip Amrus Natalsya
+      <span class="ornament">&#10070;</span>
+      Dibuat dengan hormat untuk sang maestro
+      <span class="ornament">&#10070;</span>
+      Bumi Tarung
+    </div>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/reveal.js"></script>
+</body>
+</html>
